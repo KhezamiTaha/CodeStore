@@ -1,11 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header'
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="text-red-600">
-      CodeStore
-    </div>
+    <>
+      <Header/>
+      <main>
+        <Outlet/>
+      </main>
+      <Footer/>
+    </>
   );
 }
 
