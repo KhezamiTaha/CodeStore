@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        envatoGreen: '#82b441',
+        customGray: '#1a1a1a',
+      },
+    },
   },
   plugins: [],
 }
